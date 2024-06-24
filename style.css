@@ -10,10 +10,12 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff; /* Light background color for containers */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow effect */
 }
 
 header {
-    background-color: #282c34;
+    background-color: #007bff; /* Primary blue color for header */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -46,57 +48,67 @@ nav ul li a {
 
 section {
     padding: 50px 0;
+    background-color: #f8f9fa; /* Light gray background for sections */
 }
 
 section h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #007bff; /* Blue color for section headings */
 }
 
 .skill-set, .experience, .project {
     margin-bottom: 30px;
+    background-color: #fff; /* White background for skill, experience, and project boxes */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow effect */
 }
 
 .skill, .experience, .project {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #f1f1f1; /* Light gray background for individual skills, experiences, and projects */
 }
 
 footer {
-    background-color: #282c34;
+    background-color: #007bff; /* Blue color for footer */
     color: white;
     text-align: center;
     padding: 10px 0;
 }
 
-/* Animations */
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+/* Form styles */
+form {
+    background-color: #fff; /* White background for forms */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow effect */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+form label {
+    font-weight: bold;
+    color: #007bff; /* Blue color for form labels */
 }
 
-#header {
-    animation: slideIn 2s ease-in-out;
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#about, #skills, #experience, #projects, #contact {
-    animation: fadeIn 2s ease-in-out;
+form button[type="submit"] {
+    background-color: #007bff; /* Blue color for submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
 }
